@@ -1,0 +1,153 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.row{
+    margin: 0;
+}
+
+  /* Footer */
+  footer{
+    position: absolute;
+      width: 100%;
+      bottom: 0;
+      background-color: var(--main-bg);
+      margin-top: auto;
+    }
+    footer p{
+      margin: 0;
+      text-align: center;
+      color: #fff;
+      line-height: 5rem;
+      font-size: 1.4rem;
+    }
+
+/* Footer */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+} */
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #272727;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-top: auto;
+}
+
+footer li{
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.icons a{
+    background: #52527a;
+    color: #272727;
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 100%;
+    display: flex;
+}
+.icons a:hover{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.menu a{
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.menu a:hover{
+    color: #52527a;
+    transition: 0.5s;
+}
+
+.footer-copyright{
+    background-color:#52527a;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.footer-copyright p{
+    margin-bottom: 0px;
+}
+
+/*======================
+    404 page
+=======================*/
+
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+.link-404{
+    position: absolute;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-left: -5rem;
+}
+button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: capitalize;
+    box-shadow: 0 8px 6px -6px #000;
+    outline: none;
+}
+button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ .pp{
+    font-size: 2rem;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+			 font-size:80px;
+			 }
+			 
+			 .link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;}
+	.contant_box_404{ margin-top:-50px;}

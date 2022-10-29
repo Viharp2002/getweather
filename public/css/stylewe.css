@@ -1,0 +1,251 @@
+
+  /* Navbar */
+  @import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,900&family=Ubuntu:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.row{
+    margin: 0;
+}
+
+.main_menu{
+    margin-top: -15px;
+    background-color: var(--main-bg);
+}
+.navbar{
+    color: #fff;
+    background-color: var(--main-bg);
+    padding: 2rem 0;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.navbar-toggler{
+    background-color: blue;
+}
+.navbar li{
+    margin-left: 2rem;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+.fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: var(--main-color);
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* temp details show here */
+.tempinformation{
+    width: 40rem;
+    margin: auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: "Roboto",sans-serif;
+    margin-top: -30px;
+}
+.top-layer{
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2rem 0;
+}
+
+.top-layer p{
+    color: #fff;
+    font-weight: 300;
+    font-family: 1.5rem;
+}
+.main-layer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.main-layer #cityname{
+    padding: 2rem 0;
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+.main-layer .middle-layer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.main-layer .middle-layer p,
+.main-layer .middle-layer .fa{
+    font-size: 7rem;
+    font-weight: 900;
+}
+.fa{
+    color: #009ad8;
+}
+sup{
+    font-size: 6rem;
+    margin-top: -2rem;
+}
+.data-hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+/* temp input fields style code */
+.temp-form{
+    width: 60%;
+    position: relative;
+    margin: 7rem auto 4rem;
+}
+.temp-form input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;
+    margin-top: -50px;
+}
+
+::placeholder{
+    color: #bfc1c8;
+}
+.temp-form input[type="submit"]{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #fff;
+    padding:0 3rem;
+    border-radius: 3rem;
+    color: #009ad8;
+    font-size: 1.6rem;
+    margin-top: -30px;
+}
+
+.temp-form input[type="submit"]:hover{
+    background-color: #009ad8;
+    color: #fff;
+}
+#day{
+    font-size: 1.4rem;
+}
+#today-data{
+    font-size: 1.4rem;
+}
+
+  /* Footer */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+} */
+a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #272727;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-top: auto;
+}
+
+footer li{
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.icons a{
+    background: #52527a;
+    color: #272727;
+    padding: 14px;
+    font-size: 20px;
+    border-radius: 100%;
+    display: flex;
+}
+.icons a:hover{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.menu a{
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.menu a:hover{
+    color: #52527a;
+    transition: 0.5s;
+}
+
+.footer-copyright{
+    background-color:#52527a;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.footer-copyright p{
+    margin-bottom: 0px;
+}
+
+    /* Responsive */
+    @media (max-width: 768px) /*Atli hoy che phone ni width*/
+    {
+         .temp-form{
+            width: auto;
+         }
+         .tempinformation{
+            width: auto;
+            height: 35rem;
+
+         }
+        
+    }
+
+    @media (max-width: 768px) /*Atli hoy che phone ni width*/
+{
+ 
+    .navbar-toggler-icon{
+        background-color: blue;
+    }
+}

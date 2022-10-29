@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      {{>headerlinks}};
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/stylewe.css">
+   <link rel="shortcut icon" href="./images/favicon.png" type="x-icon">
+    <!--Ionicons-->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     
+</head>
+<body>
+    {{!-- Navbar --}}
+     <div class="conatiner-fluid main_menu">
+        <div class="row"> 
+            <div class="col-md-10 col-12 mx-auto">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="far fa-snowflake"></i> Weather App <i class="far fa-snowflake"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About Me</a>
+                          </li>
+                    </div>
+</nav>
+</div>
+</div>
+</div>
+
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main-content">
+                    <form class="temp-form">
+                        <input type="text" name="search" id="city-name" placeholder="Enter Your City Name..." autocomplete="off">
+                        <input type="submit" value="search" id="submitBtn">
+                    </form>
+                </div>
+                <div class="tempinformation">
+                    <div class="top-layer">
+                        <p id="day"></p>
+                        <p id="today-data"></p>
+                    </div>
+                    <div class="main-layer">
+                        <p id="cityname">Get Output Here</p>
+                        <div class="middle-layer data-hide">
+                            <p id="temp"><span>0</span><sup>o</sup>C</p>
+                            <p id="temp-status"> <i class="fa fa-cloud" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   {{!-- Footer --}}
+   <footer>
+        <ul class="icons">
+            <li><a hrhref="https://wa.me/9327307797?text=urlencodedtext" target={"_blank"}><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/vihar-prajapati-a52844226"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://www.facebook.com/vihar.prajapati.5/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/viharp2002/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+            <div class="footer-copyright">
+                <p>Copyright @ 2022 All Rights Reserved.</p>
+            </div>
+    </footer> 
+
+    <script src="js/main.js"></script>
+    <script>
+        const getday = ()=>{
+
+        let week = new Array(7);
+        week[0] = "Sunday";
+        week[1] = "Monday";
+        week[2] = "Tuesday";
+        week[3] = "Wednesday";
+        week[4] = "Thursday";
+        week[5] = "Friday";
+        week[6] = "Saturday";
+
+        let mon = new Array(12);
+        mon[0] = "Jan";
+        mon[1] = "Feb";
+        mon[2] = "March";
+        mon[3] = "April";
+        mon[4] = "May";
+        mon[5] = "June";
+        mon[6] = "July";
+        mon[7] = "Aug";
+        mon[8] = "Sept";
+        mon[9] = "Oct";
+        mon[10] = "Nov";
+        mon[11] = "Dec";
+        let days = new Date();
+
+        const daym = document.getElementById("day");
+        const today_data = document.getElementById("today-data");
+        daym.innerText = week[days.getDay()];
+        let dayq = days.getUTCDate();
+        let monq = mon[days.getMonth()];
+        let cc = dayq + " " + monq;
+        today_data.innerText = cc;
+        }
+        getday();
+
+    </script>
+</body>
+</html> 

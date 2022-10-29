@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <link rel="shortcut icon" href="./images/favicon.png" type="x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     {{>headerlinks}}
+    <link rel="stylesheet" href="css/styleab.css">
+    <!--Ionicons-->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     
+</head>
+<body>
+   {{!-- Navbar --}}
+   <div class="conatiner-fluid main_menu">
+        <div class="row"> 
+            <div class="col-md-10 col-12 mx-auto">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="far fa-snowflake"></i> Weather App <i class="far fa-snowflake"></i></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/weather">Weather</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/about">About Me</a>
+                          </li>
+                    </div>
+</nav>
+</div>
+</div>
+</div>
+
+
+
+    <header class='masthead'>
+        <img src="./images/vihar.jpg" alt="">
+        <p class='masthead-intro'>Hi I'm</p>
+        <h1 class='masthead-heading'>Vihar Prajapati!</h1>
+    </header>
+
+    <section class="introduction-section">
+        <h1 class="vihs">About this website</h1>
+        <p>I have created this website using pure HTML,CSS and JavaScript. This website is useful for coders who want a proper guidence or just want to learn any specific language. Because this website provides the `Official Documentation` for every language.</p>     
+    </section>
+
+    <section class="introduction-section">
+        <h1 class="vihs">Introduction</h1>
+        <p>I am currently pursuing my B.Tech in Computer Engineering at <a href="https://www.bvmengineering.ac.in/">Birla Vishwakarma Mahavidyalaya</a> I am a MERN Developer and good at Problem Solving. My areas of intrest are Machine Learning and Web Development.</p>
+        <p>I love communicating with people clearly and creatively and I like arts, culture, and technology which is why I’m trying to learn more about code.</p>
+    </section>
+    <section class="location-section">
+        <h1 class="vihs">Where I'm From</h1>
+        <p>I'm originally from Anand, Gujarat.</p>
+    </section>
+    <section class="questions-section">
+        <h1 class="vihsa">More About Me</h1>
+        <h2 class="vihs">What are my favorite hobbies?</h2>
+        <p>I love to solve puzzeles, learn about new things and also reading novels.</p>
+        <h2 class="vihs">What's my dream job?</h2>
+        <p>My goal is to achieve a good job where I can utilize and enhanced my skills as well as knowledge also I would like to work independently after gaining corporate area experience.</p>
+        <h2 class="vihs">What's my background?</h2>
+        <p>I learned C and C++ before my college journey started and I started solving some problems based on these two technology. In my 2nd year of Engineering,I learned the basics of Web Development and made some basic projects on JavaScript. After gaining enough confidence and knowledge I made some intermediate level projects based on MERN technology. Apart from Coding and Web Development, I have keen interest in Machine Learning and Deep Learning. I have also made some projects that you can refer in 'Projects' Section. Since I graduated I've revisited my old knowledge and tried to bring it up to date.</p>
+        <p>Because programming is awesome and programming for the internet is even more awesome.</p>
+    </section>
+       
+       {{!-- Footer --}}
+       <footer>
+        <ul class="icons">
+            <li><a hrhref="https://wa.me/9327307797?text=urlencodedtext" target={"_blank"}><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/vihar-prajapati-a52844226"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://www.facebook.com/vihar.prajapati.5/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/viharp2002/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+            <div class="footer-copyright">
+                <p>Copyright @ 2022 All Rights Reserved.</p>
+            </div>
+    </footer> 
+    </div><!-- end wrapper -->
+  </body>
+</html>
